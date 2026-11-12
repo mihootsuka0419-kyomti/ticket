@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>uka — 電子チケット</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>uka</h1><p>COSPLAY EVENT · E-TICKET</p></header>
+<div class="fringe"></div>
+<nav id="nav"></nav>
+<main id="app"><p class="note" style="text-align:center">♠ 幕を開けています… ♠</p></main>
+<div id="modal"><div class="box"><h3>♦ もぎり ♦</h3><p class="note">スタッフ用パスワードを入力してください</p><input id="pw" type="password" autocomplete="off" placeholder="パスワード"><div class="msg" id="pmsg"></div><div style="display:flex;gap:8px;justify-content:center"><button id="pok">もぎる</button><button id="pno" class="ghost" style="margin-top:14px">やめる</button></div></div></div>
+<div id="toast"></div>
+<!-- 保存先: GitHub(data/db.json)。GitHub Pages以外で開くと自動でローカル保存(デモ)になります -->
+<script src="config.js"></script>
+<script src="js/adapters/github.js"></script>
+<script src="js/adapters/local.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
